@@ -504,6 +504,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.top-20{
+  top: 5rem;
+}
+
+.top-10{
+  top: 2.5rem;
+}
+
+.top-14{
+  top: 3.5rem;
+}
+
+.top-12{
+  top: 3rem;
+}
+
 .m-4{
   margin: 1rem;
 }
@@ -540,6 +568,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
+.mb-0{
+  margin-bottom: 0px;
+}
+
 .block{
   display: block;
 }
@@ -560,12 +592,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.h-44{
+  height: 11rem;
+}
+
 .h-6{
   height: 1.5rem;
 }
 
-.h-52{
-  height: 13rem;
+.h-full{
+  height: 100%;
 }
 
 .h-5{
@@ -576,16 +612,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 8rem;
 }
 
-.h-2{
-  height: 0.5rem;
-}
-
-.h-10{
-  height: 2.5rem;
-}
-
-.h-full{
-  height: 100%;
+.w-44{
+  width: 11rem;
 }
 
 .w-6{
@@ -791,16 +819,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: var(--leadFont);
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
 
 .font-semibold{
   font-weight: 600;
-}
-
-.uppercase{
-  text-transform: uppercase;
 }
 
 .text-gray-600{
@@ -1044,10 +1078,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-column: span 2 / span 2;
   }
 
-  .tablet\:col-span-8{
-    grid-column: span 8 / span 8;
-  }
-
   .tablet\:col-span-10{
     grid-column: span 10 / span 10;
   }
@@ -1064,24 +1094,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
-  .tablet\:h-32{
-    height: 8rem;
-  }
-
   .tablet\:h-52{
     height: 13rem;
-  }
-
-  .tablet\:h-40{
-    height: 10rem;
-  }
-
-  .tablet\:h-44{
-    height: 11rem;
-  }
-
-  .tablet\:h-60{
-    height: 15rem;
   }
 
   .tablet\:grid-cols-12{
@@ -1106,13 +1120,15 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-column: span 8 / span 8;
   }
 
-  .laptop\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .laptop\:grid-cols-12{
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
+
+  .laptop\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
+
+
 
 
